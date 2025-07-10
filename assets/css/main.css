@@ -2857,3 +2857,44 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+#constructions video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  #constructions video {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  #constructions video {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #constructions video {
+    max-width: 800px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  #constructions .section-title h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #constructions {
+    padding: 40px 0;
+  }
+}
